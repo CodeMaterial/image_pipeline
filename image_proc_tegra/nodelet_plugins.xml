@@ -1,4 +1,4 @@
-<library path="libimage_proc_tegra">
+<library path="lib/libimage_proc_tegra">
   
    <class name="image_proc_tegra/RectifyNodelet"
 	  type="image_proc_tegra::RectifyNodelet"

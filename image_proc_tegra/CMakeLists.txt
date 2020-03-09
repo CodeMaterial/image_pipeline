@@ -4,7 +4,6 @@ set (CMAKE_CXX_STANDARD 11)
 
 find_package(CUDA REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
-  cv_bridge
   image_transport
   image_geometry
   OpenCV
@@ -12,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   roscpp
   nodelet  
+  cv_bridge
 )
 
 catkin_package(
@@ -19,6 +19,9 @@ catkin_package(
   DEPENDS OpenCV
   LIBRARIES ${PROJECT_NAME}
 )
+
+
+message(${OpenCV_INCLUDE_DIRS})
 
 include_directories(SYSTEM 
 ${catkin_INCLUDE_DIRS} 
