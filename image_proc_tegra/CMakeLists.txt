@@ -30,16 +30,16 @@ ${CUDA_INCLUDE_DIRS}
 )
 include_directories(include)
 
-add_library(${PROJECT_NAME}     src/nodelets/rectify.cpp )
-target_link_libraries(${PROJECT_NAME}
-${catkin_LIBRARIES}
-${OpenCV_LIBRARIES}
-${CUDA_LIBRARIES}
-)
-
-add_executable(image_proc_tegra_exe src/image_proc_tegra.cpp)
-
-target_link_libraries(image_proc_tegra_exe
-   ${PROJECT_NAME}
-   ${catkin_LIBRARIES}
-)
+#add_library(${PROJECT_NAME}     src/nodelets/rectify.cpp )
+#target_link_libraries(${PROJECT_NAME}
+#${catkin_LIBRARIES}
+#${OpenCV_LIBRARIES}
+#${CUDA_LIBRARIES}
+#)
+#
+#add_executable(image_proc_tegra_exe src/image_proc_tegra.cpp)
+#
+#target_link_libraries(image_proc_tegra_exe
+#   ${PROJECT_NAME}
+#   ${catkin_LIBRARIES}
+#)
